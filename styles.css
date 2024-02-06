@@ -9,95 +9,84 @@ body, h1, h2, h3, p, ul, li, a {
 /* Body & Font Setup */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f4f7; /* Lighter blue background */
-    color: #333; /* Dark text for readability */
+    background-color: #f0f4f7; /* Light blue background for better readability */
+    color: #333; /* Dark text for high contrast */
     line-height: 1.6;
 }
 
 /* Header */
 header {
-    background-color: #007bff; /* Bright blue */
-    color: #ffffff; /* White text */
+    background-color: #007bff; /* Bright blue for visibility */
+    color: #ffffff; /* White text for contrast */
     text-align: center;
     padding: 20px 0;
 }
 
-header h1 {
-    margin-bottom: 5px;
-}
-
-header p {
-    font-size: 20px;
-}
-
 /* Navigation Menu */
 nav ul {
-    background-color: #0056b3; /* Slightly darker blue */
-    overflow: auto;
-    padding: 0 20px;
+    background-color: #0056b3; /* Darker blue for contrast with text */
+    text-align: center;
+    padding: 10px 0;
 }
 
 nav ul li {
-    float: left;
+    display: inline;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: white;
-    padding: 10px;
-    display: block;
+    color: white; /* High contrast for readability */
+    padding: 10px 15px;
 }
 
 nav ul li a:hover, nav ul li a:focus {
-    background-color: #004094; /* Dark blue for hover/focus */
+    background-color: #004094; /* Slightly darker on hover/focus for feedback */
+    border-radius: 5px; /* Rounded corners for a modern look */
+    outline: none; /* Remove outline and replace with below for focused links */
 }
 
-/* Clearfix for floated elements */
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
+nav ul li a:focus {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #007bff; /* Custom focus style for accessibility */
 }
 
-/* Main Content Section */
+/* Main Content */
 section {
+    background-color: #ffffff; /* White backgrounds for sections */
     padding: 20px;
     margin: 20px 0;
-    background-color: #ffffff; /* White background for content */
     border-radius: 8px; /* Rounded corners */
 }
 
 /* Footer */
 footer {
-    background-color: #007bff; /* Bright blue matching the header */
-    color: white;
+    background-color: #007bff; /* Matching the header */
+    color: #ffffff; /* Contrast */
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
 }
 
-/* Links */
-a {
-    color: #007bff;
+/* Link Styles */
+a, a:visited {
+    color: #007bff; /* Default link color */
 }
 
-a:hover {
-    color: #0056b3;
+a:hover, a:focus {
+    color: #0056b3; /* Darker blue on hover/focus */
+    text-decoration: underline; /* Underline for visual cue */
 }
 
-/* Additional Styling */
-/* Feel free to add styles for buttons, forms, or any other elements specific to your site. */
-
-/* Example Button Style */
+/* Additional Styling for Buttons or Special Elements */
 .button {
-    display: inline-block;
-    background-color: #007bff;
-    color: #ffffff;
+    background-color: #007bff; /* Button background */
+    color: #ffffff; /* Button text color */
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
     border: none;
+    display: inline-block;
 }
 
 .button:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Darker on hover */
 }
